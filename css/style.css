@@ -454,6 +454,10 @@ img {
   padding-bottom: 94px;
 }
 
+/* .gallery-list-img {
+  background-color: #eeeeee;
+} */
+
 .gallery-list {
   display: flex;
   flex-wrap: wrap;
