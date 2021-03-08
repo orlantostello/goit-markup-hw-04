@@ -279,8 +279,8 @@ img {
 .features-list .features-list-item {
   width: calc((100%-90px) / 4);
   margin-right: 30px;
-  margin-left: 0;
 }
+
 .features-list .features-list-item:last-child {
   margin-right: 0;
 }
@@ -302,33 +302,6 @@ img {
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
-
-/* .features-list-item::before {
-  display: block;
-  content: "";
-  height: 120px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: var(--color-filter);
-  margin-bottom: 30px;
-}
-
-.icon-antenna::before {
-  background-image: url("./images/sprite.svg#antenna");
-}
-
-.icon-clock::before {
-  background-image: url("../images/icons/clock.svg");
-}
-
-.icon-diagram::before {
-  background-image: url("../images/icons/diagram.svg");
-}
-
-.icon-astronaut::before {
-  background-image: url("../images/icons/astronaut.svg");
-} */
 
 .features-list-logo {
   display: flex;
@@ -431,11 +404,14 @@ img {
 
 .clients-list {
   display: flex;
-  justify-content: space-between;
 }
 
-.clients-item:not(:last-child) {
+.clients-list .clients-item {
+  width: calc((100%-150px) / 6);
   margin-right: 30px;
+}
+.clients-list .clients-item:last-child {
+  margin-right: 0;
 }
 
 .clients-link {
