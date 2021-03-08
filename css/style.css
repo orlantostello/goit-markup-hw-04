@@ -186,6 +186,10 @@ img {
   margin-right: 10px;
 }
 
+.contact-tel:hover::before {
+  fill: var(--accent-color);
+}
+
 .contact-tel::before {
   display: inline-block;
   content: "";
