@@ -174,32 +174,25 @@ img {
   color: var(--accent-color);
 }
 
-.contact-mail::before {
-  display: inline-block;
-  content: "";
-  height: 12px;
-  width: 16px;
-  background-image: url("../images/icons/envelope.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
+.contact-link {
+  display: flex;
+  align-items: center;
+  fill: currentcolor;
+}
+
+.contact-logo-mail {
   margin-right: 10px;
 }
 
-.contact-tel:hover::before {
+.contact-logo-tel {
+  margin-right: 10px;
+}
+
+.contact-link:hover .contact-logo-mail,
+.contact-link:focus .contact-logo-mail,
+.contact-link:hover .contact-logo-tel,
+.contact-link:focus .contact-logo-tel {
   fill: var(--accent-color);
-}
-
-.contact-tel::before {
-  display: inline-block;
-  content: "";
-  height: 16px;
-  width: 10px;
-  background-image: url("../images/icons/smartphone.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  margin-right: 10px;
 }
 
 /* ============= END HEADER ============= */
@@ -310,7 +303,7 @@ img {
   letter-spacing: 0.03em;
 }
 
-.features-list-item::before {
+/* .features-list-item::before {
   display: block;
   content: "";
   height: 120px;
@@ -322,7 +315,7 @@ img {
 }
 
 .icon-antenna::before {
-  background-image: url("../images/icons/antenna.svg");
+  background-image: url("./images/sprite.svg#antenna");
 }
 
 .icon-clock::before {
@@ -335,6 +328,17 @@ img {
 
 .icon-astronaut::before {
   background-image: url("../images/icons/astronaut.svg");
+} */
+
+.features-list-logo {
+  display: flex;
+  width: 270px;
+  height: 120px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  background-color: var(--color-filter);
+  margin-bottom: 30px;
 }
 
 /* ============= END FEATURES ============= */
@@ -423,6 +427,31 @@ img {
 .clients {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+
+.clients-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.clients-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.clients-link {
+  display: flex;
+  width: 170px;
+  height: 90px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  fill: #afb1b8;
+}
+
+.clients-link:hover .clients-logo,
+.clients-link:focus .clients-logo {
+  fill: var(--accent-color);
 }
 
 /* ============= END Regular customers ============= */
