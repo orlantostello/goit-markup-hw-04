@@ -473,6 +473,7 @@ img {
   padding-top: 60px;
   padding-bottom: 60px;
   display: flex;
+  align-items: baseline;
 }
 
 .address-list-item {
@@ -503,9 +504,6 @@ img {
 
 .footer-icon {
   margin-left: 70px;
-  display: block;
-  width: 206px;
-  padding-top: 12px;
 }
 
 .footer-title {
